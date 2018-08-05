@@ -1,0 +1,18 @@
+<ion-content padding>
+  <h3>TimeSheet</h3>
+
+  <img class="centro" src="./assets/imgs/planilha.svg" alt="logo">
+
+  <form class="centro">
+    <ion-item class="justificado">
+      <ion-label floating>E-mail</ion-label>
+      <ion-input [(ngModel)]="_login.email" name="email" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="last-item justificado">
+      <ion-label floating>Senha</ion-label>
+      <ion-input [(ngModel)]="_login.senha" name="senha" type="password"></ion-input>
+    </ion-item>
+    <button ion-button block outline class="botaoJustificado" (click)="login()">Entrar</button>
+  </form>  
+
+</ion-content>

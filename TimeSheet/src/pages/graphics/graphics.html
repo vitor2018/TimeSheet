@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><b>Dashboard</b></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  <ion-card class="centro chartMargin">
+    <ion-card-header>
+      Chart 1
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #canvasChart1></canvas>
+    </ion-card-content>
+  </ion-card>
+  <br/>
+  <ion-card class="centro">
+    <ion-card-header>
+      Chart 2
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #canvasChart2></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

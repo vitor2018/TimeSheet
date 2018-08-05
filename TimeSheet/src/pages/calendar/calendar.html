@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><b>Gerenciar Horários</b></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab top right edge>
+    <button (click)="editTime()" ion-fab mini><ion-icon class="icon-white" name="add"></ion-icon></button>
+  </ion-fab>
+
+  <h3 class="centroTexto"><b>{{viewTitle}}</b></h3>
+
+  <calendar [eventSource]="eventSource"
+  [calendarMode]="calendar.mode"
+  [currentDate]="calendar.currentDate"    
+  (onEventSelected)="onEventSelected($event)"
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="onTimeSelected($event)"
+  (onCurrentDateChanged)="onCurrentDateChanged($event)"  
+  step="30"
+  class="calendar">
+  </calendar>
+</ion-content>

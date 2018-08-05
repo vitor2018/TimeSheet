@@ -1,0 +1,7 @@
+{
+  "name": "TimeSheet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
